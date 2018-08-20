@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .main {
-  width: 980px;
+  width: 1200px;
   margin: 0 auto;
-  background: snow;
 }
 
 ul:not(.not), #topbar, .util li {
   display: flex;
+  align-items: center;
 }
 
 ul:not(.not) {
@@ -20,18 +20,8 @@ ul:not(.not) {
   background-size: cover;
 }
 
-#bg_pattern {
-  padding: 70px 0;
-  width: 100%;
-  background: #000;
-  background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, .8) 75%) 0 0, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, .8) 75%) 0 0, linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, .8) 75%) 1px -1px, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, .8) 75%) 1px -1px, #000;
-  background-size: 4px 4px;
-  opacity: .5;
-}
-
 header.main {
   height: 160px;
-  background: azure;
   position: absolute;
   top: 0;
   left: 50%;
@@ -46,26 +36,114 @@ header.main {
 
 #topbar {
   height: 40px;
-  background: skyblue;
   justify-content: space-between;
-  align-items: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.tab li{
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #00163B;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.tab li.active{
+  background: #fff;
+  color: #727272;
 }
 
 .util li {
   align-items: center;
+  padding-right: 15px;
 }
 
-.minus, .plus {
-  display: inline-block;
+.util .bar{
   background: #fff;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
+  height: 16px;width: 16px;
   margin: 1px;
+  cursor: pointer;
 }
 
-.bar{
+.util .bar>div{
   background: #9B9B9B;
-  width: 100%;height: 2px;
-  top: 50%;left: 50%;
+  width: 10px;height: 2px;
+  margin: 7px 3px;
+  position: absolute;
+}
+
+.util .bar>div.plus{
+  width: 2px;height: 10px;
+  margin: 3px 7px;
+}
+.logo{
+  position: relative;
+  height: 120px;
+}
+.logo>h1{
+  display: none;
+}
+
+.logo img{
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+}
+
+.logo .icon01{
+  right: 45px;
+}
+.logo .icon02{
+  right: 0;
+}
+
+.logo .gnb{
+  position: absolute;left: 460px;
+  top: 50%; transform: translateY(-50%);
+  color: #5A5A5A;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.logo .gnb li{
+  margin-right: 55px;
+}
+.logo .gnb li:hover{
+  color: #0044AF;
+}
+
+
+section.main{
+  background: azure;
+}
+
+section.main header{
+  height: 260px;
+  position: relative;
+  color: #fff;
+}
+section.main nav, section.main .title{
+  top: 50%; transform: translateY(-50%);
+  position: absolute;
+}
+section.main .title{
+  letter-spacing: -.2em;
+}
+section.main .title h2{
+  font-size: 62px;
+  font-weight: bold;
+}
+section.main .title h3{
+  font-size: 46px;
+}
+
+section.main nav{
+  right: 0;
+}
+
+section.main nav li{
+  padding-left: 15px;
+  background: pink;
 }
