@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-ul:not(.not), #topbar, .util li, #contents>div, section.main>footer {
+ul:not(.not), #topbar, .util li, #contents>div, section.main>footer, .card01-icons, .sns {
   display: flex;
   align-items: center;
 }
@@ -182,7 +182,6 @@ section.main nav li p {
   text-align: center;
 }
 
-
 #contents article {
   height: 100%;
   position: relative;
@@ -201,34 +200,38 @@ section.main nav li p {
   background: url(../img/bg02.png) center;
 }
 
-.col01 article h4, .col01 article div{
+.col01 article h4, .col01 article div {
   position: absolute;
 }
 
-.col01 article:first-child h4{
+.col01 article:first-child h4 {
   color: #1452B8;
-  top: 90px;left: 85px;
+  top: 90px;
+  left: 85px;
   line-height: 65px;
   font-size: 62px;
   text-shadow: 0 0 10px #fff;
 }
 
-.description{
-  width: 170px;height: 40px;
+.description {
+  width: 170px;
+  height: 40px;
   color: #fff;
   text-align: center;
   line-height: 40px;
   font-size: 14px;
 }
 
-.col01  article:first-child .description{
-  bottom: 85px;left: 90px;
+.col01 article:first-child .description {
+  bottom: 85px;
+  left: 90px;
   background-color: #192D4E;
 }
 
-.col01  article:last-child .description{
-  bottom: 75px;left: 40px;
-  background-color: rgba(0,0,0,.5);
+.col01 article:last-child .description {
+  bottom: 75px;
+  left: 40px;
+  background-color: rgba(0, 0, 0, .5);
   border: 1px solid #fff;
 }
 
@@ -237,77 +240,196 @@ section.main nav li p {
   background: url(../img/bg03.png) center;
   color: #fff;
 }
-.col01 article:last-child h4{
+
+.col01 article:last-child h4 {
   font-size: 32px;
-  top: 80px; left: 35px;
+  top: 80px;
+  left: 35px;
 }
 
-.col01 article:last-child p{
+.col01 article:last-child p {
   position: absolute;
-  top: 230px;left: 35px;
+  top: 230px;
+  left: 35px;
 }
-.yellow{
-  width: 100%;height: 100%;background: rgba(106, 63, 0,.7);
+
+.yellow {
+  width: 100%;
+  height: 100%;
+  background: rgba(106, 63, 0, .7);
   z-index: 1;
 }
 
 .col02>article, .col03>article:first-child, .bottomBar01 {
   flex-basis: 25%;
 }
-.col02>article{
+
+.col02>article {
   color: #fff;
-}
-.card01{
-  background: #00163B;
+  position: relative;
 }
 
-.card02{
-  background: #1651B7;
-  padding: 20px 20px;
-}
-
-.card02 h4{
+.col02>article h4 {
   font-weight: bold;
   font-size: 18px;
 }
-.card02 h4::after{
-  content:"";
+
+.card01 {
+  background: #00163B;
+}
+
+.card01 h4 {
+  margin: 20px;
+}
+
+.card01-icons {
+  width: 100%;
+  justify-content: space-around;
+  height: 180px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.card01-icons h5 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.card02 {
+  background: url(../img/college02.png) no-repeat;
+  background-size: 200%;
+}
+
+.card02-bg {
+  background: rgba(22, 81, 184, .9);
+  width: 100%;
+  padding: 20px;
+}
+
+.card02 h4::after {
+  content: "";
   background: #fff;
-  width: 100%;height: 2px;
+  width: 100%;
+  height: 2px;
   margin-bottom: 3px;
   margin-top: 10px;
   display: block;
 }
-.card02 ul{
-  padding-left: 20px;
+
+.card02 ul {
+  padding-left: 15px;
   font-size: 14px;
 }
 
-.card02 li{
+.card02 li {
   position: relative;
   margin: 15px 0;
   letter-spacing: -1px;
 }
 
-.card02 p{
+.card02 p {
   position: absolute;
-  right: 0; top: 3px;
+  right: 5px;
+  top: 3px;
 }
 
-.card03{
+article.card03 {
   background: #fff;
+  padding: 20px 20px;
   color: #000;
 }
 
-.card04{
-  background: #000;
+.col02>article>* {
+  position: absolute;
+}
+
+.card03>img, .card03 p {
+  width: 115px;
+  height: 85px;
+  top: 70px;
+  left: 20px;
+  font-size: 14px;
+  letter-spacing: -.1px;
+}
+
+.card03 p {
+  left: 150px;
+}
+
+.card03 .sns {
+  bottom: 25px;
+  right: 20px;
+}
+
+.card04 {
+  background: url(../img/college02.png);
+  background-size: cover;
+}
+
+.card04 a {
+  width: 100%;
+  height: 100%;
+}
+
+.card04 h4 {
+  position: absolute;
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  text-align: center;
+  line-height: 55px;
+  transition: .5s
+}
+
+.card04:hover .tour {
+  height: 55px;
 }
 
 .col03>article:last-child, .bottomBar02 {
   flex-basis: 75%;
 }
 
-section.main footer{
+.play {
+  background: url(../img/college03.png);
+  background-size: cover;
+  width: 100%;
+  height: 225px;
+}
+
+.play .cover {
+  background: rgba(28, 26, 70, .7);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.col03 article:last-child {
+  background: #FF5140;
+}
+
+.btn {
+  background: rgba(0, 0, 0, .5);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+.btn .tri{
+  width: 50px;height: 50px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  border-width: 25px;
+}
+
+
+section.main footer {
   background: #fff;
   height: 60px;
   margin-top: 20px;
