@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-ul:not(.not), #topbar, .util li, #contents>div, section.main>footer, .card01-icons, .sns {
+ul:not(.not), #topbar, .util li, #contents>div, section.main>footer, section.main>footer>div, .card01-icons, .sns {
   display: flex;
   align-items: center;
 }
@@ -405,7 +405,6 @@ article.card03 {
   position: relative;
 }
 
-
 .col03 article:last-child {
   background: #FF5140;
 }
@@ -419,19 +418,124 @@ article.card03 {
   left: 50%;
   transform: translate(-50%, -50%);
   position: relative;
+  padding: 10px;
 }
 
-.btn .tri{
-  width: 50px;height: 50px;
+.btn .tri {
   border-color: transparent transparent transparent #fff;
   border-style: solid;
-  border-width: 25px;
+  border-width: 20px;
+  position: absolute;
+  top: 22%;
+  left: 42%;
 }
 
+.col03>article:last-child {
+  background: url(../img/student.png), url(../img/library01.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0 0;
+  color: rgb(252, 80, 63);
+  padding: 40px;
+}
+
+.col03>article:last-child h4 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.col03>article:last-child h5 {
+  font-size: 32px;
+}
+
+.col03>article:last-child div {
+  width: 170px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  background-color: rgba(252, 80, 63, .8);
+  border: 1px solid #fff;
+  margin-top: 10px;
+}
 
 section.main footer {
   background: #fff;
   height: 60px;
   margin-top: 20px;
   margin-bottom: 70px;
+}
+
+section.main footer>div {
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+.bottomBar01>div:first-child {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.bottomBar01>div>span {
+  padding: 0 10px;
+}
+
+div.bottomBar02>p {
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
+div.bottomBar02>p:first-child {
+  font-weight: bold;
+}
+div.bottomBar02>p.d {
+  padding-right: 50px;
+}
+
+.bottomBar02{
+  position: relative;
+}
+
+.bottombtn {
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  background: #ccc;
+}
+
+.bottombtn>div {
+  height: 29px;
+  width: 100%;
+  background: #001739;
+  position: absolute;
+  right: 0;
+}
+
+.bottombtn>div:last-child {
+  bottom: 0;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 1px 1px 0 0;
+  display: inline-block;
+  padding: 7px;
+  position: absolute;
+}
+.up .arrow{
+  transform: rotate(-45deg);
+  left: 13px;top: 12px;
+}
+.down .arrow{
+  transform: rotate(-225deg);
+  left: 13px;
+  bottom: 12px;
+}
+
+footer.main{
+  width: 700px;
+  font-size: 9px;
+  padding: 25px 0;
+  color: #9D9D9D;
 }
