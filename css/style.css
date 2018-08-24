@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-ul:not(.not), #topbar, .util li, #contents>div, section.main>footer, section.main>footer>div, .card01-icons, .sns {
+ul:not(.not), #topbar, .util li, #contents>div, section.main>footer, section.main>footer>div, .card01-icons, .sns, footer.main .line {
   display: flex;
   align-items: center;
 }
@@ -535,7 +535,22 @@ div.bottomBar02>p.d {
 
 footer.main{
   width: 700px;
-  font-size: 9px;
+  font-size: 12px;
   padding: 25px 0;
   color: #9D9D9D;
+}
+
+footer.main ul{
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer.main p{
+  padding-right: 30px;
+  line-height: 15px;
+}
+
+footer.main>div{
+  margin: 10px 0;
 }
