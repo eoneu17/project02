@@ -198,6 +198,11 @@ section.main nav li p {
 .col01 article:first-child {
   flex-basis: 900px;
   background: url(../img/bg02.png) center;
+  position: relative;
+}
+
+.myslides {
+  position: relative;
 }
 
 .col01 article h4, .col01 article div {
@@ -210,7 +215,9 @@ section.main nav li p {
   left: 85px;
   line-height: 65px;
   font-size: 62px;
+  position: absolute;
   text-shadow: 0 0 10px #fff;
+  width: 270px;
 }
 
 .description {
@@ -222,10 +229,11 @@ section.main nav li p {
   font-size: 14px;
 }
 
-.col01 article:first-child .description {
-  bottom: 85px;
-  left: 90px;
+.col01 article:first-child div.description {
   background-color: #192D4E;
+  position: absolute;
+  top: 325px;
+  left: 90px;
 }
 
 .col01 article:last-child .description {
@@ -489,11 +497,12 @@ div.bottomBar02>p {
 div.bottomBar02>p:first-child {
   font-weight: bold;
 }
+
 div.bottomBar02>p.d {
   padding-right: 50px;
 }
 
-.bottomBar02{
+.bottomBar02 {
   position: relative;
 }
 
@@ -524,34 +533,37 @@ div.bottomBar02>p.d {
   padding: 7px;
   position: absolute;
 }
-.up .arrow{
+
+.up .arrow {
   transform: rotate(-45deg);
-  left: 13px;top: 12px;
+  left: 13px;
+  top: 12px;
 }
-.down .arrow{
+
+.down .arrow {
   transform: rotate(-225deg);
   left: 13px;
   bottom: 12px;
 }
 
-footer.main{
+footer.main {
   width: 700px;
   font-size: 12px;
   padding: 25px 0;
   color: #9D9D9D;
 }
 
-footer.main ul{
+footer.main ul {
   justify-content: space-between;
   font-weight: bold;
   font-size: 14px;
 }
 
-footer.main p{
+footer.main p {
   padding-right: 30px;
   line-height: 15px;
 }
 
-footer.main>div{
+footer.main>div {
   margin: 10px 0;
 }

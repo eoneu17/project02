@@ -7,8 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>한국대학교</title>
   <link rel="stylesheet" href="css/myreset.css">
-  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <script src="js/slideshow.js"></script>
 </head>
 
 <body>
@@ -97,9 +98,21 @@
 
       <section id="contents">
         <div class="col01">
-          <article>
-            <h4><b>한국</b>에서<br><b>시작</b>하는<br><b>새로운</b> 꿈</h4>
-            <div class="description"><a href="#">자세히 보기 &#9654;</a></div>
+          <article class="slideshow-container">
+            <div class="mySlides fade">
+              <h4><b>한국</b>에서<br><b>시작</b>하는<br><b>새로운</b> 꿈</h4>
+              <div class="description"><a href="#">자세히 보기 &#9654;</a></div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div class="dots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
           </article>
           <article>
             <div class="yellow">
@@ -175,10 +188,19 @@
               </div>
             </div>
           </article>
-          <article>
-            <h5>2017년 신&#8231;편입생 2차 모집</h5>
-            <h4>2017.7.1 ~ 7.10</h4>
-            <div><a href="#">입학사전예약 &#9654;</a></div>
+          <article class="slideshow-container">
+            <span class="forslides mySlides fade">
+              <h5>2017년 신&#8231;편입생 2차 모집</h5>
+              <h4>2017.7.1 ~ 7.10</h4>
+              <div><a href="#">입학사전예약 &#9654;</a></div>
+            </span>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <span class="forslides dots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </span>
           </article>
         </div>
       </section>
