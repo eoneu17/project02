@@ -11,6 +11,9 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
+.slideshow-container2 .prev{
+  transform:translateX(-41.59px)
+}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -22,6 +25,7 @@
   position: absolute;
   left: 50%;top: 90%;
 }
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -50,19 +54,4 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-span.forslides{
-  display: block;
-}
-
-.forslides .active, .dot:hover{
-  background-color: #F54337;
-}
-
-.forslides .dot{
-  background-color: #535353;
-}
-
-.forslides .dots{
-  top: 10px;right: 20px;
 }
